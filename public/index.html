@@ -2,29 +2,101 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./sass/style.css">
     <title>Webjump - Desafio Frontend</title>
   </head>
   <body>
-    <header>
-      <section>
+
+    <header class="header">
+      <section class="acess-login">
+        <div>
+          <p><span>Acesse sua conta</span> ou <span>Cadastre-se</span></p>
+        </div>
+      </section>
+
+      <section class="container logo-seach">
         <img src="./media/logo_webjump_branco-1.png" alt="Logo Webjump">
         <div>
           <input type="text">
           <button type="submit">Buscar</button>
         </div>
       </section>
+
       <nav>
-        <ul>
-          <a><li>Página Inicial</li></a>
-          <a><li>Camisetas<li></a>
-          <a><li>Calças<li></a>
-          <a><li>Sapatos</li></a>
-          <a><li>Contatos</li></a>
+        <ul class="container">
+          <a href="#"><li>Página Inicial</li></a>
+          <a href="#"><li>Camisetas<li></a>
+          <a href="#"><li>Calças<li></a>
+          <a href="#"><li>Sapatos</li></a>
+          <a href="#"><li>Contatos</li></a>
         </ul>
       </nav>
     </header>
 
+    <section>
+      <article>
+        <header>
+          <p>Página inicial</p> >
+          <p>Sapatos</p>
+        </header>
+        <section>
+          <h3>Filtre Por</h3>
+          <div>
+            <h4>Categorias</h4>
+            <ul>
+              <li>Roupas</li>
+              <li>Sapatos</li>
+              <li>Acessórios</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Cores</h4>
+            <ul>
+              <li>vermelho</li>
+              <li>laranja</li>
+              <li>azul</li>
+            </ul>
+            
+          </div>
+          <div>
+            <h4>tipo</h4>
+            <ul>
+              <li>Corrida</li>
+              <li>Caminhada</li>
+              <li>Casual</li>
+              <li>Social</li>
+            </ul>
+          </div>
+        </section>
+
+
+      </article>
+
+      <aside>
+        <h2>Sapatos</h2>
+        <div>
+          <span></span>
+          <span></span>
+          <p>Ordenar por</p>
+          <select name="price-shoes" id="price-shoes">
+            <option value="">Preço</option>
+          </select>
+        </div>
+        <div id="shoes-shop">
+          <p>oi</p>
+        </div>
+
+      </aside>
+    </section>
+    <footer>
+
+    </footer>
 
     <h1>Pronto para codar!</h1>
+
+
+
+    <script src="./js/index.js"></script>
   </body>
 </html>

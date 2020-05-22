@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.header {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.header .container {
+  display: flex;
+  margin: 0 auto;
+  width: 1440px;
+}
+.header .acess-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #231f20;
+  color: #fff;
+  height: 30px;
+}
+.header .acess-login div {
+  width: 1444px;
+  display: flex;
+  justify-content: flex-end;
+}
+.header .acess-login div p {
+  font-size: 12px;
+}
+.header .acess-login div p span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.header .logo-seach {
+  display: flex;
+  height: 115px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo-seach div {
+  position: relative;
+}
+.header .logo-seach div input {
+  height: 40px;
+  width: 525px;
+  padding: 3px;
+  font-size: 15px;
+  color: #000;
+}
+.header .logo-seach div button {
+  width: 115px;
+  text-transform: uppercase;
+  height: 40px;
+  font-size: 15px;
+  background-color: #cc0d1f;
+  color: #fff;
+  border-style: none;
+  position: absolute;
+  right: 0px;
+}
+.header .logo-seach div button:hover {
+  font-size: 14px;
+}
+.header section {
+  display: flex;
+}
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #cc0d1f;
+  height: 55px;
+}
+.header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    margin: 0 auto;
+}
+
+.header{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    .container{
+        display: flex;
+        margin: 0 auto;
+        width: 1440px;
+    }
+    .acess-login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #231f20;
+        color: #fff;
+        height: 30px;
+        div{
+            width: 1444px;
+            display: flex;
+            justify-content: flex-end;
+            p{
+                font-size: 12px;
+                span{
+                    font-weight: bold;
+                    text-decoration: underline;
+                }
+
+            }
+            
+        }
+        
+    }
+
+    .logo-seach{
+        display: flex;
+        height: 115px;
+        justify-content: space-between;
+        align-items: center;
+        div{
+            position: relative;
+            input{
+                height: 40px;
+                width: 525px;
+                padding: 3px;
+                font-size: 15px;
+                color: #000;
+            }
+
+            button{
+              width: 115px;
+              text-transform: uppercase;
+              height: 40px;  
+              font-size: 15px;
+              background-color: #cc0d1f ;
+              color: #fff;
+              border-style: none;
+              position: absolute;
+              right: 0px;
+            }
+            button:hover{
+                font-size: 14px;
+            }
+        }
+    }
+    section{
+        display: flex;
+        
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        background-color: #cc0d1f;
+        height: 55px;
+        ul{
+            display: flex;
+            justify-content: space-around;
+
+        }
+        
+    }
+}
