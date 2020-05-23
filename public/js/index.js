@@ -15,7 +15,7 @@
             linkShop.innerHTML += listProduct
         });   
         
-        let numberproduct
+        var numberproduct
         
         linkShop.addEventListener('click', e => {
             numberproduct = e.target.closest("li").dataset.id
@@ -35,11 +35,11 @@
                         <div class="only-product">
                             <img src="${product.image}" alt="${product.path}">
                             <p>${product.name}</p>
-                            <p>${product.price}</p>
+                            <p>R$ ${ product.price.toFixed(parseInt(product.price, 10) ? 0 : 2) },00</p>
                             <button>Comprar</button>
                         </div>
                         `
-                        return shoesShop.innerHTML += allinfo
+                        shoesShop.innerHTML += allinfo
                     })
                 })
             }
