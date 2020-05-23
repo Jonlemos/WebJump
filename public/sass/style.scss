@@ -116,24 +116,147 @@ body{
 }
 
 .menu-product{
+    margin-top: 30px;
+    header{
+        display: flex;
+        padding-bottom: 25px;
+
+        p{
+            padding: 5px 5px;
+        }
+        p:nth-child(2){
+            color:red
+        }
+    }
 
     .filter-product{
         width: 260px ;
+        border: 1px #e2dedd solid;
+        padding: 20px;
+
+        h3{
+            color: #c60518;
+            font-size: 18px;
+            padding-bottom: 25px ;
+            text-transform: uppercase;
+        }
+        h4 {
+            font-size: 16px;
+            color: #659089;
+            padding-bottom: 25px;
+            text-transform: uppercase;
+        }
+        ul{
+            padding: 0 0 25px 20px;
+
+            li{
+                line-height: 25px;  
+
+            }
+        }
+        img {
+            padding-bottom: 25px;
+        }
+
+        
     }
 
 }
 
-
-#shoes-shop{
-    width: 955px;
-
-    .only-product{
-        width: 212px;
-        img{
-            height: 235px;
+.product-select{
+    margin: 80px 0 0 30px;
+    h2{
+        color: red;
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    hr{
+        color:#dfdfdf;
+    }
+    .select-mode{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 45px;
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p{
+                color: #828284;
+                padding-right: 11px;
+            }
         }
     }
+
+    #shoes-shop{
+        width: 955px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        .only-product{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 212px;
+            
+            div:nth-child(1){
+                display: flex;
+                justify-content: center;
+                width: 215px;
+                border: 1px #e2dedd solid;
+                img{
+                    height: 235px;
+                }
+            }
+            p{
+                padding-top: 10px;
+                color: #5d5d5d;
+                font-weight: 600;
+                font-size: 16px;
+                word-wrap: break-word;
+                text-align: center;
+            }
+            div:nth-child(2){
+                height: 45px;
+                p{
+                    // padding-top: 10px;
+                    // color: #5d5d5d;
+                    // font-weight: 600;
+                    // font-size: 16px;
+                    word-wrap: break-word;
+                }
+            }
+
+
+            
+            
+            p:nth-child(3){
+                color: red;
+                font-weight: 800;;
+
+            }
+            button{
+                background-color: #80bdb8;
+                width: 215px;
+                height: 40px;
+                border-radius: 5px;
+                border-style: none;
+                color: #fff;
+                font-size: 16px;
+                margin: 10px 0 30px 0;
+                cursor: pointer;
+            }
+        }
+    }
+
 }
+
+
+
 
 
 

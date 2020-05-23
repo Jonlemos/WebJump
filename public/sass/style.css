@@ -104,18 +104,123 @@ body {
   cursor: pointer;
 }
 
+.menu-product {
+  margin-top: 30px;
+}
+.menu-product header {
+  display: flex;
+  padding-bottom: 25px;
+}
+.menu-product header p {
+  padding: 5px 5px;
+}
+.menu-product header p:nth-child(2) {
+  color: red;
+}
 .menu-product .filter-product {
   width: 260px;
+  border: 1px #e2dedd solid;
+  padding: 20px;
+}
+.menu-product .filter-product h3 {
+  color: #c60518;
+  font-size: 18px;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+}
+.menu-product .filter-product h4 {
+  font-size: 16px;
+  color: #659089;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+}
+.menu-product .filter-product ul {
+  padding: 0 0 25px 20px;
+}
+.menu-product .filter-product ul li {
+  line-height: 25px;
+}
+.menu-product .filter-product img {
+  padding-bottom: 25px;
 }
 
-#shoes-shop {
-  width: 955px;
+.product-select {
+  margin: 80px 0 0 30px;
 }
-#shoes-shop .only-product {
+.product-select h2 {
+  color: red;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.product-select hr {
+  color: #dfdfdf;
+}
+.product-select .select-mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+}
+.product-select .select-mode div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-select .select-mode div p {
+  color: #828284;
+  padding-right: 11px;
+}
+.product-select #shoes-shop {
+  width: 955px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product-select #shoes-shop .only-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 212px;
 }
-#shoes-shop .only-product img {
+.product-select #shoes-shop .only-product div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  width: 215px;
+  border: 1px #e2dedd solid;
+}
+.product-select #shoes-shop .only-product div:nth-child(1) img {
   height: 235px;
+}
+.product-select #shoes-shop .only-product p {
+  padding-top: 10px;
+  color: #5d5d5d;
+  font-weight: 600;
+  font-size: 16px;
+  word-wrap: break-word;
+  text-align: center;
+}
+.product-select #shoes-shop .only-product div:nth-child(2) {
+  height: 45px;
+}
+.product-select #shoes-shop .only-product div:nth-child(2) p {
+  word-wrap: break-word;
+}
+.product-select #shoes-shop .only-product p:nth-child(3) {
+  color: red;
+  font-weight: 800;
+}
+.product-select #shoes-shop .only-product button {
+  background-color: #80bdb8;
+  width: 215px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: none;
+  color: #fff;
+  font-size: 16px;
+  margin: 10px 0 30px 0;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

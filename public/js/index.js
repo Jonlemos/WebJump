@@ -2,12 +2,13 @@
     
     var shoesShop = document.getElementById('shoes-shop')
     var linkShop = document.getElementById('link-shop')
+    var exactProduct = document.getElementById('exactProduct')
     
     var listProduct
     axios.get('http://localhost:8888/api/V1/categories/list').then(function (response) {
             
         const products = response.data.items
-
+        console.log(products)
         products.map(product => {
             listProduct = `
                 <a id="product-${product.id}"><li data-id="${product.id}">${product.name}<li></a>
@@ -33,8 +34,12 @@
                         
                         allinfo = `
                         <div class="only-product">
-                            <img src="${product.image}" alt="${product.path}">
-                            <p>${product.name}</p>
+                            <div>
+                                <img src="${product.image}" alt="${product.path}">
+                            </div>
+                            <div>
+                                <p>${product.name}</p>
+                            </div>
                             <p>R$ ${ product.price.toFixed(parseInt(product.price, 10) ? 0 : 2) },00</p>
                             <button>Comprar</button>
                         </div>
