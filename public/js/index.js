@@ -8,7 +8,6 @@
     axios.get('http://localhost:8888/api/V1/categories/list').then(function (response) {
             
         const products = response.data.items
-        console.log(products)
         products.map(product => {
             listProduct = `
                 <a id="product-${product.id}"><li data-id="${product.id}">${product.name}<li></a>
