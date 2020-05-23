@@ -9,16 +9,17 @@ body{
     margin: 0 auto;
 }
 
+.container{
+    display: flex;
+    margin: 0 auto;
+    width: 1440px;
+}
+
 .header{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 
-    .container{
-        display: flex;
-        margin: 0 auto;
-        width: 1440px;
-    }
     .acess-login{
         display: flex;
         justify-content: center;
@@ -48,6 +49,9 @@ body{
         height: 115px;
         justify-content: space-between;
         align-items: center;
+        img{
+            height: 50px;
+        }
         div{
             position: relative;
             input{
@@ -83,11 +87,53 @@ body{
         justify-content: space-between;
         background-color: #cc0d1f;
         height: 55px;
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+        
         ul{
             display: flex;
-            justify-content: space-around;
+            justify-content: flex-start;
+            align-items: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            list-style: none;
+
+            li{
+                padding-right: 100px;
+                text-transform: uppercase;
+            }
+            #link-shop{
+                display: flex;
+                cursor: pointer;
+            }
 
         }
         
     }
 }
+
+.menu-product{
+
+    .filter-product{
+        width: 260px ;
+    }
+
+}
+
+
+#shoes-shop{
+    width: 955px;
+
+    .only-product{
+        width: 212px;
+        img{
+            height: 235px;
+        }
+    }
+}
+
+
+

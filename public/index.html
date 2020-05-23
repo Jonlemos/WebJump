@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./sass/style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Webjump - Desafio Frontend</title>
   </head>
   <body>
@@ -24,23 +25,23 @@
       </section>
 
       <nav>
-        <ul class="container">
+        <ul  class="container">
           <a href="#"><li>Página Inicial</li></a>
-          <a href="#"><li>Camisetas<li></a>
-          <a href="#"><li>Calças<li></a>
-          <a href="#"><li>Sapatos</li></a>
+          <div id="link-shop">
+            
+          </div>
           <a href="#"><li>Contatos</li></a>
         </ul>
       </nav>
     </header>
 
-    <section>
-      <article>
+    <section class="container">
+      <article class="menu-product">
         <header>
           <p>Página inicial</p> >
-          <p>Sapatos</p>
+          <p id="exactProduct">Sapatos</p>
         </header>
-        <section>
+        <section class="filter-product">
           <h3>Filtre Por</h3>
           <div>
             <h4>Categorias</h4>
@@ -84,7 +85,8 @@
           </select>
         </div>
         <div id="shoes-shop">
-          <p>oi</p>
+          
+
         </div>
 
       </aside>
@@ -93,10 +95,9 @@
 
     </footer>
 
-    <h1>Pronto para codar!</h1>
 
-
-
+    
     <script src="./js/index.js"></script>
+    
   </body>
 </html>
